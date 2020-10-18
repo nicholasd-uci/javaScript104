@@ -8,27 +8,36 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>JS - Basic Rendering</title>
   </head>
   <body>
+    <!-- This is the UL Tag and we make a id "movies" -->
+    <!-- we then will create a document.createElement with a ('li') tag -->
+    <!-- each let Var will render inside of this UL Tag -->
     <ul id="movies" class="list-group"></ul>
-
-    <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
     <script>
+      // Let Variables that hold our array of information
         let movies = ['The Mask', 'Toy Story', 'Gone With Whe Wind', 'Wheres papa?', 'Whats up Doc?']
         let games = ['Skyrim', 'Mario Party 3', 'Fallout 3', 'Halo', 'Zelda']
         let sports = ['Football', 'Lacrosse', 'Golf', 'MMA', 'Tennis', 'Rugby']
         let foods = ['Pasta', 'Tacos', 'Filet', 'Gyro', 'Cheesecake']
-
+        // For Loop that lets i always = 0
+        // as long as i is less than the length of our Array it will continue to render info
         for (let i = 0; i < movies.length; i++) {
+            // We use the .createElement method to create each item as a ('li') for every time For Loop Runs 
+            // It will not appear on the page but bring it into existence 
             let movieElement = document.createElement('li')
+            // We then use .className to make sure that each item has 'list-group-item' as a class name (bootstrap purposes) 
             movieElement.className = 'list-group-item'
-            movieElement.textContent = movie[i ]
+            // We then grab the movie elements by grabbing its text content from the Array (let movies || let games etc)
+            movieElement.textContent = movies[i]
+            // We then grab the id element from UL Tag and make sure that we append each ('li')
+            // This will make it always append to the bottom
             document.getElementById('movies').append(movieElement)
         }
     </script>
