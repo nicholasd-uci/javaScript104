@@ -1,45 +1,50 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Count Page</title>
-  </head>
-  <body>
-    <h1>Count: <span id="count">0</span></h1>
-    <button id="myBtn">Click Me</button>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
+  <title>Count Page</title>
+</head>
 
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script>
+<body>
+  <h1>Count: <span id="count">0</span></h1>
+  <button id="myBtn">Click Me</button>
 
-        // BEST PRACTICE
-        let count = 0
-        // we are setting the .textContent to be the value of "count"
-        document.getElementById('count').textContent = count
-        // grab the Element By its ID and the use DOT NOTATION
-        // .addEventListener('click', function here ) => it will always be 'click' and then a Arrow Function () => {}
-            document.getElementById('myBtn').addEventListener('click', () => {
-                // Inside of these { } is a fully written instruction set
-                console.log('ping')
-                count++ 
-                document.getElementById('count').textContent = count
-            })
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <script>
 
-        // **Note** You can also call a function above the EventListener
-            // EX) const myFunction = () => {}
-            
-        // This lets you use any type of selector - You just have to use # symbol
-        // document.querySelector('#myBtn')
-        // document.querySelectorAll('#myBtn')
-       
-    </script>
-  </body>
+    // BEST PRACTICE
+    let count = 0
+    // we are setting the .textContent to be the value of "count"
+    document.getElementById('count').textContent = count
+    // grab the Element By its ID and the use DOT NOTATION
+    // .addEventListener('click', function here ) => it will always be 'click' and then a Arrow Function () => {}
+    document.getElementById('myBtn').addEventListener('click', () => {
+      // Inside of these { } is a fully written instruction set
+      console.log('ping')
+      count++
+      document.getElementById('count').textContent = count
+    })
+    //       **Note**
+    // You can also call a function above the EventListener
+    //    EX) const myFunction = () => {}
+    // This lets you use any type of selector - You just have to use # symbol
+    // document.querySelector('#myBtn')
+    // document.querySelectorAll('#myBtn')
+
+  </script>
+</body>
+
 </html>
