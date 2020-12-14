@@ -7,8 +7,8 @@
 
 ```
 
-    - Explains each page and gives snipping of the page's
-    _____________________________________________________
+    - Brief explanation of each page and gives snip'its as well
+    ___________________________________________________________
     - Section I   - Generator Page
     - Section II  - Input Page
     - Section III - Counter Page
