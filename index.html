@@ -9,9 +9,10 @@
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
   <style>
-    body{
+    body {
       background-color: rgb(243, 189, 189);
     }
+
     #accordionExample {
       padding-left: 200px;
       padding-right: 200px;
@@ -24,6 +25,15 @@
       margin-bottom: 20px;
       margin-left: 20px;
       margin-right: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+      padding-bottom: 15px;
     }
   </style>
 </head>
@@ -55,6 +65,8 @@
     </div>
   </nav>
   <div class="accordion" class="container-xl" id="accordionExample">
+    <h1>Welcome</h1>
+    <h3>Check Out Each Description For A Breif Overview Of Each Page</h3>
     <div class="accordion-item">
       <h2 class="accordion-header" id="headingOne">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
@@ -85,7 +97,7 @@
                   class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
                   <path fill-rule="evenodd"
                     d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z" />
-                </svg>The Generator Page</a>
+                </svg>Go To The Generator Page</a>
             </center>
           </div>
         </div>
@@ -100,12 +112,15 @@
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
           data-bs-parent="#accordionExample">
           <div>
-            <img src="./photos/mainInputPage.PNG" class="rounded float-start" height="150px" alt="Home Page">
-            <img src="./photos/inputPage.PNG" class="rounded float-end" height="150px" alt="Example Page">
+            <img src="./photos/mainInputPage.PNG" class="rounded float-start" height="150px" alt="Input Page">
+            <img src="./photos/inputPage.PNG" class="rounded float-end" height="150px" alt="Ex Input Page">
           </div>
           <div class="accordion-body">
             <p>
-              <strong>The Input Page!</strong> On this page I practiced leveraging an open source design library called Bootstrap. I wanted to create a simple form that a user could input actual information. Even though the user's information is not stored in local storage, it's main purpose is that it has the capability for user interaction. Within this page a user can do just that.
+              <strong>The Input Page!</strong> On this page I practiced leveraging an open source design library called
+              Bootstrap. I wanted to create a simple form that a user could input actual information. Even though the
+              user's information is not stored in local storage, it's main purpose is that it has the capability for
+              user interaction. Within this page a user can do just that.
             </p>
             <p>
               I used <code>Visual-Code Studio</code> for my source-code editor. Check It Out!
@@ -117,7 +132,7 @@
                     class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
                       d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z" />
-                  </svg> Go To Input Page</a>
+                  </svg> Go To The Input Page</a>
               </center>
             </div>
           </div>
@@ -132,13 +147,32 @@
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
           data-bs-parent="#accordionExample">
+          <div>
+            <img src="./photos/buttonPageMain.PNG" class="rounded float-start" height="150px" width="375px"
+              alt="Button Page">
+            <img src="./photos/buttonActive.PNG" class="rounded float-end" height="150px" width="375px"
+              alt="Ex Button Page">
+          </div>
           <div class="accordion-body">
-            <strong>The Counter Page!</strong> It is hidden by default, until the collapse plugin
-            adds the appropriate classes that we use to style each element. These classes control the overall
-            appearance,
-            as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
-            overriding our default variables. It's also worth noting that just about any HTML can go within the
-            <code>.accordion-body</code>, though the transition does limit overflow.
+            <p>
+              <strong>The Counter Page!</strong> On the counter page a user can go and button smash their mouse as many
+              times as they want to. It was mainly developed for basic javaScript purposes, but then I turned it into a
+              stress reliever. Every time I was not able to complete a task, I would just take my frustration out on the
+              counter!
+            </p>
+            <p>
+              I used <code>Visual-Code Studio</code> for my source-code editor. Check It Out!
+            </p>
+            <div>
+              <center>
+                <a class="nav-link" href="./buttons.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z" />
+                  </svg>Go To The Counter Page</a>
+              </center>
+            </div>
           </div>
         </div>
       </div>
