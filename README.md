@@ -38,7 +38,7 @@ On the counter page a user can go and button smash their mouse as many times as 
 
 ## LINKS
 
-- [javaScript104 Link] Coming Soon!
+- [javaScript104 Link](https://nicholasd-uci.github.io/javaScript104/)
 - [Github Repo Link](https://github.com/nicholasd-uci/javaScript104)
 - [Nicholas Dallas GitHub](https://github.com/nicholasd-uci)
 
