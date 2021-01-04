@@ -40,6 +40,7 @@ On the counter page a user can go and button smash their mouse as many times as 
 
 - [javaScript104 Link] Coming Soon!
 - [Github Repo Link](https://github.com/nicholasd-uci/javaScript104)
+- [Nicholas Dallas GitHub](https://github.com/nicholasd-uci)
 
 - - -
 © 2020 NPRD, Nicholas Paul Ruiz Dallas
